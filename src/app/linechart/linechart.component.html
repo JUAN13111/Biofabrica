@@ -1,0 +1,157 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/Biofactory.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">BIOFABRICA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONFIGURACION</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+  <div class="row g-4">
+    
+    <div class="col-md-6 col-lg-3">
+      <h2>Gráfico 1</h2>
+      <canvas id="MyLineChart1" style="width: 100%; height: 300px;"></canvas>
+      <div id="semaforo1" class="semaforo-container">
+        <div id="semaforo1-red" class="semaforo-light"></div>
+        <div id="semaforo1-yellow" class="semaforo-light"></div>
+        <div id="semaforo1-green" class="semaforo-light"></div>
+      </div>
+      <p id="semaforo1-message" class="semaforo-message">Estado del valor</p>
+    </div>
+
+   
+    <div class="col-md-6 col-lg-3">
+      <h2>Gráfico 2</h2>
+      <canvas id="MyLineChart2" style="width: 100%; height: 300px;"></canvas>
+      <div id="semaforo2" class="semaforo-container">
+        <div id="semaforo2-red" class="semaforo-light"></div>
+        <div id="semaforo2-yellow" class="semaforo-light"></div>
+        <div id="semaforo2-green" class="semaforo-light"></div>
+      </div>
+      <p id="semaforo2-message" class="semaforo-message">Estado del valor</p>
+    </div>
+
+    
+    <div class="col-md-6 col-lg-3">
+      <h2>Gráfico 3</h2>
+      <canvas id="MyLineChart3" style="width: 100%; height: 300px;"></canvas>
+      <div id="semaforo3" class="semaforo-container">
+        <div id="semaforo3-red" class="semaforo-light"></div>
+        <div id="semaforo3-yellow" class="semaforo-light"></div>
+        <div id="semaforo3-green" class="semaforo-light"></div>
+      </div>
+      <p id="semaforo3-message" class="semaforo-message">Estado del valor</p>
+    </div>
+
+    
+    <div class="col-md-6 col-lg-3">
+      <h2>Gráfico 4</h2>
+      <canvas id="MyLineChart4" style="width: 100%; height: 300px;"></canvas>
+      <div id="semaforo4" class="semaforo-container">
+        <div id="semaforo4-red" class="semaforo-light"></div>
+        <div id="semaforo4-yellow" class="semaforo-light"></div>
+        <div id="semaforo4-green" class="semaforo-light"></div>
+      </div>
+      <p id="semaforo4-message" class="semaforo-message">Estado del valor</p>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Acerca de</h5>
+        <p>Biofabrica: Monitoreo de parámetros en cultivos sostenibles.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Enlaces útiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!" class="text-white">Política de Privacidad</a></li>
+          <li><a href="#!" class="text-white">Términos y Condiciones</a></li>
+          <li><a href="#!" class="text-white">Soporte</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contacto</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!" class="text-white">Email: biofabrica&#64;co.com</a></li>
+          <li><a href="#!" class="text-white">Teléfono: +57 123 456 7890</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center p-3 d-flex justify-content-between align-items-center"
+    style="background-color: rgba(0, 0, 0, 0.8);">
+    <a href="#">
+      <img src="assets/img/Biofactory.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+    <p class="mb-0">© 2024 <a class="text-white" href="#">Biofabrica.com</a></p>
+  </div>
+</footer>
+
+
+<style>
+  .semaforo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .semaforo-light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 10px;
+  }
+
+  .semaforo-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  .navbar-brand img {
+    max-height: 50px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  canvas {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
